@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng 2 ô</title>
+</head>
+<body>
+<input type="text" name="number" value="Nhập số a" id ="nhapa">
+<input type="text" name="number" value="Nhập số b" id ="nhapb">
+<button onclick="phepcong()">Press</button>
+<script>
+    alert("Ấn press để tính tổng a + b =");
+    function phepcong(){
+        let so1 = +document.getElementById("nhapa").value;
+        let so2 = +document.getElementById("nhapb").value;
+        //alert(so1 + so2); //c1: Alert
+        //console.log(so1 + so2) // c2: Console.log
+        document.write(so1 + so2) // c3: Document.write
+    }
+</script>
+</body>
+</html>
